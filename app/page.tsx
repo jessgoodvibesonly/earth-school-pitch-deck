@@ -851,10 +851,10 @@ export default function AspireMarionMiniPage() {
                 }}
               >
                 <a
-                  href="https://us06web.zoom.us/j/83714913737?pwd=Z6O3McqxGtbAf25pYav3mnRb50JyMi.1"
+                  href="https://calendly.com/aspiritualwarriorspath/synergy-call-aspire-x-earth-school-x-partnerships"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={primaryCtaStyle}
+                  className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500 px-8 py-4 text-sm font-black uppercase tracking-[0.2em] text-white shadow-[0_0_30px_rgba(236,72,153,0.6)] transition hover:scale-105"
                 >
                   SCHEDULE TIME WITH JESS
                 </a>
