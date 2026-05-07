@@ -851,7 +851,7 @@ export default function AspireMarionMiniPage() {
                 }}
               >
                 <a
-                  href="https://us06web.zoom.us/j/83714913737?pwd=Z6O3McqxGtbAf25pYav3mnRb50JyMi.1"
+                  href="https://calendly.com/aspiritualwarriorspath/synergy-call-aspire-x-earth-school-x-partnerships"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={primaryCtaStyle}
