@@ -190,7 +190,7 @@ export default function EarthSchoolPitchDeck() {
           <p className="eyebrow">EARTH SCHOOL</p><p className="kicker">A TEMPORARY HUMAN EXPERIENCE</p>
           <h2>THE MOST IMPORTANT UPGRADE<br />IS NOT YOUR CHARACTER.</h2>
           <p className="statement">IT IS YOUR PERSPECTIVE.</p><p className="large">REMEMBER WHY YOU CAME.</p>
-          <div className="actions"><a className="primary" href="https://discord.gg/8Th6Tfvut" target="_blank" rel="noopener noreferrer">ENTER THE EARTH SCHOOL COMMUNITY</a><a className="secondary" href="mailto:jessgoodvibesonly@gmail.com">CONNECT WITH JESS ☮️</a></div>
+          <div className="actions"><a className="primary" href="https://discord.gg/8Th6Tfvut" target="_blank" rel="noopener noreferrer">ENTER THE EARTH SCHOOL COMMUNITY</a><a className="secondary" href="https://calendly.com/aspiritualwarriorspath/synergy-call-aspire-x-earth-school-x-partnerships" target="_blank" rel="noopener noreferrer">BOOK A CALL WITH JESS</a></div>
           <footer><a href="https://www.instagram.com/jessgoodvibesonly/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.linkedin.com/in/jessica-simmonds-aspire4/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:jessgoodvibesonly@gmail.com">Email</a></footer>
         </div>
       </section>
