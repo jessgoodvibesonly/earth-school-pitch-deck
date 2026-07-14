@@ -1,11 +1,10 @@
 import type { ReactNode } from "react";
+import "./styles.css";
 
 export const metadata = {
-  title: "Aspire PODS | Marion",
-  description: "Aspire PODS overview for Marion",
-  icons: {
-    icon: "/aspire-pods-logo.png",
-  },
+  title: "EARTH SCHOOL | A Temporary Human Experience",
+  description:
+    "A cinematic investor presentation for EARTH SCHOOL, a cooperative 1980s East Coast Canadian adventure where awareness, perspective and human growth become gameplay.",
 };
 
 export default function RootLayout({
@@ -15,9 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, background: "#000000" }}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

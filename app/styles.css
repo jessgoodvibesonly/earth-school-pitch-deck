@@ -1,0 +1,55 @@
+:root { color-scheme: dark; background: #120b08; --cream:#fff3d7; --gold:#f6b35b; --ember:#d86d32; --rose:#9f3f37; --dark:#120b08; --wine:#2a1210; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: radial-gradient(circle at top, #402019 0%, #120b08 46%, #080504 100%); color: var(--cream); font-family: Arial, Helvetica, sans-serif; }
+main { overflow: hidden; }
+a { color: inherit; }
+p { color: rgba(255,243,215,.82); font-size: clamp(17px, 2vw, 21px); line-height: 1.65; margin: 0 0 18px; max-width: 900px; }
+.wrap { width: min(1180px, calc(100% - 40px)); margin: 0 auto; position: relative; z-index: 1; }
+.section { padding: clamp(72px, 9vw, 122px) 0; position: relative; background: linear-gradient(135deg, rgba(18,11,8,.98), rgba(42,18,16,.96)); }
+.section.amber { background: linear-gradient(135deg, #6f351f, #2a1210 68%); }
+.section.rose { background: linear-gradient(135deg, #4b1d19, #130908 72%); }
+.section:before { content:""; position:absolute; inset:0; background: radial-gradient(circle at 12% 20%, rgba(246,179,91,.18), transparent 30%), radial-gradient(circle at 84% 80%, rgba(216,109,50,.16), transparent 28%); pointer-events:none; }
+.hero { min-height: 100svh; display: grid; align-items: center; padding: 80px 0; position: relative; background: linear-gradient(90deg, rgba(12,7,5,.92), rgba(42,18,16,.74)), url('/echopointmap.png') center/cover; }
+.heroShade { position:absolute; inset:0; background: radial-gradient(circle at 72% 45%, rgba(246,179,91,.18), transparent 28%), linear-gradient(0deg, rgba(8,5,4,.86), transparent 30%, rgba(8,5,4,.54)); }
+.heroGrid { display:grid; grid-template-columns: 1fr minmax(280px, 470px); gap: clamp(30px, 6vw, 72px); align-items:center; }
+.eyebrow, .kicker { font-size: 13px; font-weight: 900; letter-spacing: .34em; text-transform: uppercase; color: var(--gold); margin: 0 0 14px; }
+.kicker { color: rgba(255,243,215,.78); letter-spacing: .24em; }
+h1, h2, .sectionTitle { font-weight: 900; text-transform: uppercase; letter-spacing: -.045em; line-height: .95; margin: 0 0 24px; text-wrap: balance; }
+h1 { font-size: clamp(48px, 9vw, 108px); max-width: 920px; }
+h2, .sectionTitle { font-size: clamp(38px, 6.4vw, 78px); max-width: 980px; }
+h3 { margin:0 0 10px; font-size: 18px; line-height:1.1; letter-spacing:.08em; text-transform: uppercase; }
+.lead, .large { font-size: clamp(21px, 2.8vw, 30px); line-height: 1.36; color: rgba(255,243,215,.92); }
+.actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:28px; }
+.primary, .secondary { display:inline-flex; align-items:center; justify-content:center; border-radius:999px; padding:15px 22px; font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.18em; text-decoration:none; transition:transform .18s ease, box-shadow .18s ease; }
+.primary { background: linear-gradient(135deg, #f6b35b, #d86d32); color:#160905; box-shadow: 0 18px 50px rgba(216,109,50,.32); }
+.secondary { border:1px solid rgba(255,243,215,.28); background: rgba(255,243,215,.08); color:var(--cream); backdrop-filter: blur(10px); }
+.primary:hover, .secondary:hover { transform: translateY(-2px); box-shadow: 0 22px 60px rgba(246,179,91,.24); }
+.mapFrame { padding:12px; border:1px solid rgba(255,243,215,.28); background:rgba(255,243,215,.08); border-radius:32px; box-shadow:0 30px 100px rgba(0,0,0,.42); animation: float 7s ease-in-out infinite; }
+.mapFrame img { width:100%; display:block; border-radius:23px; filter:saturate(.95) contrast(1.04); }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+.statement { margin-top: 28px; color: var(--gold); font-size: clamp(24px, 4vw, 48px); font-weight:900; line-height:1.02; letter-spacing:-.03em; text-transform:uppercase; max-width:980px; }
+.splitStatements, .twoCol { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:22px; margin-top:34px; }
+.splitStatements strong, .card, .featureGrid article, .roadmap div { border:1px solid rgba(255,243,215,.16); background: rgba(255,243,215,.07); border-radius:24px; padding:24px; box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
+.cardGrid, .featureGrid, .pillGrid, .roadmap { display:grid; gap:16px; margin-top:28px; }
+.cardGrid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.card p { font-size:16px; margin:0; }
+.pillGrid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.pillGrid span { border-radius:999px; border:1px solid rgba(246,179,91,.28); padding:14px 18px; background:rgba(246,179,91,.1); color:rgba(255,243,215,.92); font-weight:800; }
+.twoCol { align-items:start; }
+ul { margin:0; padding-left:20px; color:rgba(255,243,215,.84); line-height:1.8; font-size:18px; }
+.ruleList { display:grid; gap:10px; margin:28px 0; }
+.ruleList strong { color:var(--cream); font-size:clamp(20px, 3vw, 34px); line-height:1.08; }
+.loop { font-size:clamp(22px, 4vw, 44px); font-weight:900; line-height:1.35; color:var(--cream); }
+.loop span { color:var(--gold); }
+.featureGrid { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+.featureGrid article { min-height:110px; display:flex; align-items:end; font-weight:900; letter-spacing:.06em; }
+.roadmap { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.roadmap div { display:flex; flex-direction:column; gap:10px; }
+.roadmap span { color:var(--gold); font-weight:900; text-transform:uppercase; letter-spacing:.08em; }
+.finale { text-align:center; padding: clamp(90px, 12vw, 150px) 0 42px; background: linear-gradient(rgba(8,5,4,.84), rgba(8,5,4,.94)), url('/echopointmap.png') center/cover; }
+.finale p, .finale h2 { margin-left:auto; margin-right:auto; }
+.finale .actions { justify-content:center; }
+footer { display:flex; justify-content:center; gap:24px; flex-wrap:wrap; margin-top:64px; color:rgba(255,243,215,.72); font-weight:800; letter-spacing:.08em; text-transform:uppercase; font-size:12px; }
+footer a { text-decoration:none; }
+@media (max-width: 820px) { .heroGrid, .splitStatements, .twoCol { grid-template-columns:1fr; } .hero { padding:56px 0; } .mapFrame { order:-1; max-width:520px; margin:0 auto; } .wrap { width:min(100% - 28px, 1180px); } .primary, .secondary { width:100%; } }
