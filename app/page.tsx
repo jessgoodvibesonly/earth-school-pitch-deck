@@ -87,7 +87,7 @@ export default function EarthSchoolPitchDeck() {
             <p className="eyebrow">EARTH SCHOOL</p>
             <p className="kicker">A TEMPORARY HUMAN EXPERIENCE</p>
             <h1>THE NEXT EVOLUTION OF GAMING IS HUMAN GROWTH.</h1>
-            <p className="lead">A cinematic cooperative adventure set on a mysterious 1980s retro East Coast Canadian island inspired by the real landscapes of Prince Edward Island.</p>
+            <p className="lead">A cinematic cooperative adventure set on a mysterious 1980s East Coast island where consciousness, perception and reality become gameplay.<br />Explore a world trapped inside an endless time loop, uncover forgotten truths, awaken through meaningful choices and remember why you came.</p>
           </div>
         </div>
       </section>
