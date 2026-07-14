@@ -176,7 +176,7 @@ export default function EarthSchoolPitchDeck() {
       <Section eyebrow="COMMUNITY" title="BUILT WITH COMMUNITY" tone="rose">
         <p>Discord serves as the project’s community headquarters for feedback, world-building, playtesting, collaboration and long-term connection.</p>
         <p className="statement">PLAYERS ARE INVITED INTO THE JOURNEY BEFORE THE ISLAND OFFICIALLY OPENS.</p>
-        <a className="primary" href="https://discord.gg/n9bfD93mXS" target="_blank" rel="noopener noreferrer">JOIN THE EARTH SCHOOL DISCORD</a>
+        <a className="primary" href="https://discord.gg/8Th6Tfvut" target="_blank" rel="noopener noreferrer">JOIN THE EARTH SCHOOL DISCORD</a>
       </Section>
 
       <Section eyebrow="CREATOR" title="CREATED BY JESSICA SIMMONDS">
