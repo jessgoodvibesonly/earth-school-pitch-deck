@@ -82,7 +82,7 @@ function QuoteDivider({ src, alt }: { src: string; alt: string }) {
   );
 }
 
-function Section({ id, eyebrow, title, children, tone = "dark" }: { id?: string; eyebrow?: string; title?: string; children: ReactNode; tone?: "dark" | "amber" | "rose" }) {
+function Section({ id, eyebrow, title, children, tone = "dark" }: { id?: string; eyebrow?: string; title?: ReactNode; children: ReactNode; tone?: "dark" | "amber" | "rose" }) {
   return (
     <section id={id} className={`section ${tone}`}>
       <div className="wrap">
@@ -179,10 +179,11 @@ export default function EarthSchoolPitchDeck() {
         <a className="primary" href="https://discord.gg/8Th6Tfvut" target="_blank" rel="noopener noreferrer">JOIN THE EARTH SCHOOL DISCORD</a>
       </Section>
 
-      <Section eyebrow="CREATOR" title="CREATED BY JESSICA SIMMONDS">
-        <p>Jessica Simmonds is an entrepreneur, artist, author, educator and spiritual-interfaith minister with more than 25 years of experience creating, teaching and building communities.</p>
-        <p>Her work explores consciousness, neuroscience, metaphysics, archetypes, personal transformation and the nature of human experience.</p>
-        <p className="large">EARTH SCHOOL brings those ideas into an original interactive world.</p>
+      <Section eyebrow="CREATOR" title={<>CREATED BY<br />REV. DR. JESSICA SIMMONDS</>}>
+        <p>Rev. Dr. Jessica Simmonds is an entrepreneur, author, ordained Spiritual-Interfaith Minister, certified clinical hypnotherapist and educator with more than 25 years of experience building businesses, communities and transformational experiences.</p>
+        <p>She holds doctoral degrees in the philosophy of metaphysics and spiritual counseling, and has spent decades studying consciousness, neuroscience, archetypes, meditation, psychology, symbolism and the deeper patterns that shape human experience.</p>
+        <p>Jessica is also the founder of multiple purpose-driven ventures, a published author, speaker and creative director whose work bridges spirituality, technology, storytelling and interactive entertainment.</p>
+        <p>EARTH SCHOOL is the culmination of that life's work—bringing consciousness, meaningful choice and human transformation into a cinematic interactive world unlike anything that exists today.</p>
       </Section>
 
       <section className="finale">
