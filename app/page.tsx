@@ -85,9 +85,6 @@ export default function EarthSchoolPitchDeck() {
         <div className="wrap heroGrid">
           <div className="heroCopy">
             <p className="eyebrow">EARTH SCHOOL</p>
-            <div className="mapFrame">
-              <img src="/echopointmap.png" alt="Illustrated map of Echo Point Island" />
-            </div>
             <p className="kicker">A TEMPORARY HUMAN EXPERIENCE</p>
             <h1>THE NEXT EVOLUTION OF GAMING IS HUMAN GROWTH.</h1>
             <p className="lead">A cinematic cooperative adventure set on a mysterious 1980s retro East Coast Canadian island inspired by the real landscapes of Prince Edward Island.</p>
