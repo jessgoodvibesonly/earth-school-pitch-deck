@@ -65,6 +65,14 @@ const roadmap = [
   ["FULL PRODUCTION", "Future phase"],
 ];
 
+function QuoteDivider({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div className="quoteDivider" aria-label={alt}>
+      <img src={src} alt={alt} />
+    </div>
+  );
+}
+
 function Section({ id, eyebrow, title, children, tone = "dark" }: { id?: string; eyebrow?: string; title?: string; children: ReactNode; tone?: "dark" | "amber" | "rose" }) {
   return (
     <section id={id} className={`section ${tone}`}>
@@ -103,6 +111,8 @@ export default function EarthSchoolPitchDeck() {
         <div className="splitStatements"><strong>THE ISLAND REPEATS.<br />THE PLAYER REMEMBERS.</strong><strong>THE ANSWERS WERE NEVER HIDDEN.<br />THEY WERE WAITING TO BE NOTICED.</strong></div>
       </Section>
 
+      <QuoteDivider src="/cornerstorequote.png" alt="Corner Store quote" />
+
       <Section eyebrow="THE CONSCIOUSNESS ENGINE" title="A connected collection of original gameplay systems designed to make the human experience playable." tone="rose">
         <div className="cardGrid">{systems.map(([title, text]) => <article className="card" key={title}><h3>{title}</h3><p>{text}</p></article>)}</div>
       </Section>
@@ -119,16 +129,22 @@ export default function EarthSchoolPitchDeck() {
         <p className="statement">NOT SIMPLY TRANSPORTATION. TRANSFORMATION.</p>
       </Section>
 
+      <QuoteDivider src="/sanctuaryquote.png" alt="Sanctuary quote" />
+
       <Section eyebrow="THE RULES OF EARTH SCHOOL" title="Universal principles become discoverable rules of play.">
         <div className="ruleList">{rules.map((rule) => <strong key={rule}>{rule}</strong>)}</div>
         <p>Players experience these principles through story, exploration and relationships.</p>
         <p className="statement">THE PLAYER DOES NOT STUDY THE LESSON. THE PLAYER LIVES IT.</p>
       </Section>
 
+      <QuoteDivider src="/fishingquote.png" alt="Fishing quote" />
+
       <Section eyebrow="GAMEPLAY LOOP" title="A PLAYABLE JOURNEY OF REMEMBERING" tone="rose">
         <div className="loop">EXPLORE <span>→</span> HELP NPCs <span>→</span> DISCOVER CLUES <span>→</span> RETURN TO THE SANCTUARY <span>→</span> REFLECT AND ACTIVATE <span>→</span> UNLOCK NEW PATHS <span>→</span> CHANGE THE EXPERIENCE</div>
         <p>Cooperative light-MMO structure.</p><p>Approximately ten players can share an island experience while each maintains a personal journey, unique filters and a private Sanctuary Vehicle.</p>
       </Section>
+
+      <QuoteDivider src="/dreamstatedinerquote.png" alt="Dream State Diner quote" />
 
       <Section eyebrow="WHY IT STANDS OUT" title="BUILT AROUND IDEAS PLAYERS HAVE NEVER EXPERIENCED THIS WAY.">
         <div className="featureGrid">{standouts.map((item) => <article key={item}>{item}</article>)}</div>
@@ -144,6 +160,8 @@ export default function EarthSchoolPitchDeck() {
         <div className="roadmap">{roadmap.map(([title, status]) => <div key={title}><strong>{title}</strong><span>{status}</span></div>)}</div>
         <p className="large">Immediate objective: Create a focused Unreal Engine 5 vertical slice demonstrating the world, the first clue, an AI-driven NPC interaction and the Sanctuary Vehicle.</p>
       </Section>
+
+      <QuoteDivider src="/workshopquote.png" alt="Workshop quote" />
 
       <Section eyebrow="COMMUNITY" title="BUILT WITH COMMUNITY" tone="rose">
         <p>Discord serves as the project’s community headquarters for feedback, world-building, playtesting, collaboration and long-term connection.</p>
