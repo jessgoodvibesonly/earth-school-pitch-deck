@@ -61,7 +61,7 @@ const roadmap = [
   ["ECHO POINT ISLAND LOCATIONS", "In development"],
   ["GAME DESIGN DOCUMENT", "Current priority"],
   ["INTERACTIVE VERTICAL SLICE", "Next milestone"],
-  ["CINEMATIC TRAILER", "Next milestone"],
+  ["CINEMATIC TRAILER", "In development"],
   ["FULL PRODUCTION", "Future phase"],
 ];
 
