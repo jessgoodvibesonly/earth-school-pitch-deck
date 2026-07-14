@@ -64,14 +64,14 @@ const opportunity = [
 ];
 
 const roadmap = [
-  ["WORLD AND VISUAL IDENTITY", "Established"],
-  ["STORY FOUNDATION", "Established"],
-  ["CORE GAMEPLAY SYSTEMS", "Defined"],
-  ["ECHO POINT ISLAND LOCATIONS", "In development"],
-  ["GAME DESIGN DOCUMENT", "Current priority"],
-  ["INTERACTIVE VERTICAL SLICE", "Next milestone"],
-  ["CINEMATIC TRAILER", "In development"],
-  ["FULL PRODUCTION", "Future phase"],
+  ["WORLD & VISUAL IDENTITY", "ESTABLISHED"],
+  ["STORY FOUNDATION", "ESTABLISHED"],
+  ["CORE GAMEPLAY SYSTEMS", "DEFINED"],
+  ["ECHO POINT ISLAND LOCATIONS", "IN DEVELOPMENT"],
+  ["GAME DESIGN DOCUMENT", "IN ACTIVE DEVELOPMENT"],
+  ["INTERACTIVE VERTICAL SLICE", "PRE-PRODUCTION"],
+  ["CINEMATIC TRAILER", "IN DEVELOPMENT"],
+  ["FULL PRODUCTION", "FUTURE PHASE"],
 ];
 
 function QuoteDivider({ src, alt }: { src: string; alt: string }) {
@@ -167,7 +167,8 @@ export default function EarthSchoolPitchDeck() {
 
       <Section eyebrow="DEVELOPMENT VISION" title="FROM VISION TO PLAYABLE EXPERIENCE">
         <div className="roadmap">{roadmap.map(([title, status]) => <div key={title}><strong>{title}</strong><span>{status}</span></div>)}</div>
-        <p className="large">Immediate objective: Create a focused Unreal Engine 5 vertical slice demonstrating the world, the first clue, an AI-driven NPC interaction and the Sanctuary Vehicle.</p>
+        <p className="large">Current Focus: Building an Unreal Engine 5 vertical slice that showcases the core gameplay loop, AI-driven NPC interactions, the Sanctuary Vehicle, the Filter System and the first playable mystery of Echo Point Island.</p>
+        <p className="large">In parallel, the investor edition of the Game Design Document is being expanded to support production planning, publisher discussions and future team growth.</p>
       </Section>
 
       <QuoteDivider src="/workshopquote.png" alt="Workshop quote" />
