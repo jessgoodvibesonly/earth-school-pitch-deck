@@ -101,8 +101,8 @@ export default function EarthSchoolPitchDeck() {
       </Section>
 
       <Section id="echo-point" eyebrow="ECHO POINT ISLAND" title="WELCOME TO ECHO POINT ISLAND.">
-        <p className="large">A beautiful East Coast Canadian island suspended inside an endless 1980s time loop.</p>
-        <p>Players explore coastal communities, diners, motels, beaches, forests, lighthouses, arcades, hidden caves and forgotten places inspired by real Prince Edward Island locations.</p>
+        <p className="large">A beautiful East Coast island suspended inside an endless 1980s time loop.</p>
+        <p>Explore charming coastal towns, diners, motels, beaches, forests, lighthouses, arcades, hidden caves and forgotten places inspired by real East Coast locations.</p>
         <div className="splitStatements"><strong>THE ISLAND REPEATS.<br />THE PLAYER REMEMBERS.</strong><strong>THE ANSWERS WERE NEVER HIDDEN.<br />THEY WERE WAITING TO BE NOTICED.</strong></div>
       </Section>
 
