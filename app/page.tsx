@@ -49,14 +49,18 @@ const standouts = [
 ];
 
 const opportunity = [
-  "Premium core game",
-  "Future island expansions",
-  "New stories and time loops",
-  "Additional archetypes and consciousness systems",
-  "Music and Earth School Radio",
-  "Community events",
-  "Merchandise",
-  "Film, television and transmedia opportunities",
+  "PREMIUM AAA GAME",
+  "EXPANSION ISLANDS & NEW REGIONS",
+  "DOWNLOADABLE STORY CHAPTERS (DLC)",
+  "COSMETICS & CHARACTER CUSTOMIZATION",
+  "SANCTUARY VEHICLE UPGRADES",
+  "COLLECTIBLE OUTFITS & RETRO ITEMS",
+  "SEASONAL COMMUNITY EVENTS",
+  "EARTH SCHOOL RADIO & ORIGINAL SOUNDTRACK",
+  "BOOKS, ART BOOKS & MERCHANDISE",
+  "DIGITAL COLLECTIBLES & COSMETICS",
+  "FILM, TELEVISION & TRANSMEDIA",
+  "LONG-TERM FRANCHISE POTENTIAL",
 ];
 
 const roadmap = [
@@ -157,7 +161,7 @@ export default function EarthSchoolPitchDeck() {
       </Section>
 
       <Section eyebrow="THE OPPORTUNITY" title="A NEW ERA HAS BEGUN. HOLLYWOOD IS EMBRACING THE POWER OF VIDEO GAMES." tone="amber">
-        <p>Interactive entertainment brings cinematic storytelling, player agency, community and emotional connection together inside one evolving medium.</p>
+        <p>EARTH SCHOOL is designed as a long-term entertainment platform where meaningful gameplay, community and expanding content create ongoing opportunities for players and sustainable growth for the business.</p>
         <div className="pillGrid">{opportunity.map((item) => <span key={item}>{item}</span>)}</div>
       </Section>
 
