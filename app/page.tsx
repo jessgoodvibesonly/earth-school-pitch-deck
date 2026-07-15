@@ -21,57 +21,66 @@ const filterEffects = [
 ];
 
 const rules = [
-  "ATTENTION DIRECTS EXPERIENCE.",
-  "CHOICES CREATE CONSEQUENCES.",
-  "PATTERNS REPEAT UNTIL THEY ARE UNDERSTOOD.",
-  "RELATIONSHIPS BECOME MIRRORS.",
-  "BELIEFS SHAPE PERCEPTION.",
-  "COHERENCE OPENS NEW POSSIBILITIES.",
-  "WHAT YOU PRACTICE BECOMES EASIER TO SEE.",
+  "Attention directs experience",
+  "Choices create consequences",
+  "Patterns repeat until they are understood",
+  "Relationships become mirrors",
+  "Beliefs shape perception",
+  "Coherence opens new possibilities",
+  "What you practice becomes easier to see",
 ];
 
 const standouts = [
-  "CONSCIOUSNESS AS PROGRESSION",
-  "THE LAWS OF THE UNIVERSE AS GAMEPLAY",
-  "THE DIVINE SPARK SYSTEM",
-  "EVOLVING ARCHETYPES",
-  "A PERSONALIZED FILTER SYSTEM",
-  "AI-DRIVEN SOUL CONNECTIONS",
-  "MEDITATION AS ACTIVATION",
-  "NEUROSCIENCE MEETS SPIRITUALITY",
-  "ATTENTION AS CURRENCY",
-  "THE MIRROR SYSTEM",
-  "TAROT, ASTROLOGY AND NUMEROLOGY KEYS",
-  "A LIVING 1980s TIME-LOOP MYSTERY",
-  "A PRIVATE SANCTUARY VEHICLE",
-  "COOPERATIVE REMEMBERING",
-  "A HOPEFUL WORLD DESIGNED AROUND MEANING",
+  "Consciousness as progression",
+  "The laws of the universe as gameplay",
+  "The Divine Spark System",
+  "Evolving archetypes",
+  "A personalized Filter System",
+  "AI-driven soul connections",
+  "Meditation as activation",
+  "Neuroscience meets spirituality",
+  "Attention as currency",
+  "The Mirror System",
+  "Tarot, astrology and numerology keys",
+  "A living 1980s time-loop mystery",
+  "A Private Sanctuary Vehicle",
+  "Cooperative remembering",
+  "A hopeful world designed around meaning",
 ];
 
 const opportunity = [
-  "PREMIUM AAA GAME",
-  "EXPANSION ISLANDS & NEW REGIONS",
-  "DOWNLOADABLE STORY CHAPTERS (DLC)",
-  "COSMETICS & CHARACTER CUSTOMIZATION",
-  "SANCTUARY VEHICLE UPGRADES",
-  "COLLECTIBLE OUTFITS & RETRO ITEMS",
-  "SEASONAL COMMUNITY EVENTS",
-  "EARTH SCHOOL RADIO & ORIGINAL SOUNDTRACK",
-  "BOOKS, ART BOOKS & MERCHANDISE",
-  "DIGITAL COLLECTIBLES & COSMETICS",
-  "FILM, TELEVISION & TRANSMEDIA",
-  "LONG-TERM FRANCHISE POTENTIAL",
+  "Premium AAA game",
+  "Expansion islands and new regions",
+  "Downloadable story chapters",
+  "Cosmetics and character customization",
+  "Sanctuary Vehicle upgrades",
+  "Collectible outfits and retro items",
+  "Seasonal community events",
+  "Earth School Radio and original soundtrack",
+  "Books, art books and merchandise",
+  "Film, television and transmedia",
+  "Long-term franchise potential",
 ];
 
 const roadmap = [
-  ["WORLD & VISUAL IDENTITY", "ESTABLISHED"],
-  ["STORY FOUNDATION", "ESTABLISHED"],
-  ["CORE GAMEPLAY SYSTEMS", "DEFINED"],
-  ["ECHO POINT ISLAND LOCATIONS", "IN DEVELOPMENT"],
-  ["GAME DESIGN DOCUMENT", "IN ACTIVE DEVELOPMENT"],
-  ["INTERACTIVE VERTICAL SLICE", "PRE-PRODUCTION"],
-  ["CINEMATIC TRAILER", "IN DEVELOPMENT"],
-  ["FULL PRODUCTION", "FUTURE PHASE"],
+  ["World and visual identity", "Established"],
+  ["Story foundation", "Established"],
+  ["Core gameplay systems", "Defined"],
+  ["Echo Point Island locations", "In development"],
+  ["Game Design Document", "In active development"],
+  ["Interactive vertical slice", "Pre-production"],
+  ["Cinematic trailer", "In development"],
+  ["Full production", "Future phase"],
+];
+
+const gameplayLoop = [
+  "Explore",
+  "Help NPCs",
+  "Discover clues",
+  "Return to the Sanctuary",
+  "Reflect and activate",
+  "Unlock new paths",
+  "Change the experience",
 ];
 
 function QuoteDivider({ src, alt }: { src: string; alt: string }) {
@@ -116,13 +125,13 @@ export default function EarthSchoolPitchDeck() {
 
       <Section id="vision" eyebrow="A NEW KIND OF GAME" title="ONE WHERE THE AVATAR EVOLVES... AND SO DO YOU." tone="amber">
         <p className="large">EARTH SCHOOL transforms awareness, curiosity, relationships, choice and personal growth into meaningful gameplay.</p>
-        <p className="statement">THE MOST IMPORTANT UPGRADE IS NOT YOUR CHARACTER. IT IS YOUR PERSPECTIVE.</p>
+        <p className="statement">AWARENESS CHANGES WHAT BECOMES POSSIBLE.</p>
       </Section>
 
       <Section id="echo-point" eyebrow="ECHO POINT ISLAND" title="WELCOME TO ECHO POINT ISLAND.">
         <p className="large">A beautiful East Coast island suspended inside an endless 1980s time loop.</p>
         <p>Explore charming coastal towns, diners, motels, beaches, forests, lighthouses, arcades, hidden caves and forgotten places inspired by real East Coast locations.</p>
-        <div className="splitStatements"><strong>THE ISLAND REPEATS.<br />THE PLAYER REMEMBERS.</strong><strong>THE ANSWERS WERE NEVER HIDDEN.<br />THEY WERE WAITING TO BE NOTICED.</strong></div>
+        <div className="statementGrid"><strong>THE ISLAND REPEATS.</strong><strong>THE PLAYER REMEMBERS.</strong><strong>THE ANSWERS WERE NEVER HIDDEN.</strong><strong>THEY WERE WAITING TO BE NOTICED.</strong></div>
       </Section>
 
       <QuoteDivider src="/cornerstorequote.png" alt="Corner Store quote" />
@@ -133,13 +142,13 @@ export default function EarthSchoolPitchDeck() {
 
       <Section eyebrow="THE FILTER SYSTEM" title="NO TWO PLAYERS EXPERIENCE THE SAME ISLAND IN THE SAME WAY.">
         <p>The player’s attention, beliefs, habits, archetype, relationships and previous choices form a personal lens.</p>
-        <div className="pillGrid">{filterEffects.map((item) => <span key={item}>{item}</span>)}</div>
+        <div className="itemGrid">{filterEffects.map((item) => <span key={item}>{item}</span>)}</div>
         <p className="statement">PERSPECTIVE IS GAMEPLAY.</p>
       </Section>
 
       <Section eyebrow="AI-DRIVEN NPCs" title="Residents with evolving memories, routines, personalities, relationships and conversations." tone="amber">
         <p>They recognize meaningful player choices, respond to changing circumstances and create relationships that feel personal rather than scripted.</p>
-        <div className="twoCol"><div><h3>THE SANCTUARY VEHICLE</h3><p>A private mobile headquarters where the avatar can review clues, journal discoveries, meditate, access the map, listen to Earth School Radio, explore neuroscience, archetypes and consciousness, and speak with interactive mentor-style AI guides.</p></div><div><h3>MENTOR CATEGORIES</h3><ul><li>A philosopher</li><li>A neuroscientist</li><li>A psychologist</li><li>A spiritual teacher</li><li>A future version of the player</li></ul></div></div>
+        <div className="twoCol"><article className="infoCard"><h3>THE SANCTUARY VEHICLE</h3><p>A private mobile headquarters where the avatar can review clues, journal discoveries, meditate, access the map, listen to Earth School Radio, explore neuroscience, archetypes and consciousness, and speak with interactive mentor-style AI guides.</p></article><article className="infoCard"><h3>MENTOR CATEGORIES</h3><ul><li>A philosopher</li><li>A neuroscientist</li><li>A psychologist</li><li>A spiritual teacher</li><li>A future version of the player</li></ul></article></div>
         <p className="statement">NOT SIMPLY TRANSPORTATION. TRANSFORMATION.</p>
       </Section>
 
@@ -154,8 +163,8 @@ export default function EarthSchoolPitchDeck() {
       <QuoteDivider src="/fishingquote.png" alt="Fishing quote" />
 
       <Section eyebrow="GAMEPLAY LOOP" title="A PLAYABLE JOURNEY OF REMEMBERING" tone="rose">
-        <div className="loop">EXPLORE <span>→</span> HELP NPCs <span>→</span> DISCOVER CLUES <span>→</span> RETURN TO THE SANCTUARY <span>→</span> REFLECT AND ACTIVATE <span>→</span> UNLOCK NEW PATHS <span>→</span> CHANGE THE EXPERIENCE</div>
-        <p>Cooperative light-MMO structure.</p><p>Approximately ten players can share an island experience while each maintains a personal journey, unique filters and a private Sanctuary Vehicle.</p>
+        <div className="loop" aria-label="Gameplay loop">{gameplayLoop.map((step, index) => (<div className="loopStep" key={step}><strong>{step}</strong>{index < gameplayLoop.length - 1 && <span aria-hidden="true">→</span>}</div>))}</div>
+        <p>Cooperative light-MMO structure.</p><p>Approximately ten players can share an island experience while each maintains a personal journey, unique filters and a brief return to the Sanctuary.</p>
       </Section>
 
       <QuoteDivider src="/dreamstatedinerquote.png" alt="Dream State Diner quote" />
@@ -167,7 +176,7 @@ export default function EarthSchoolPitchDeck() {
 
       <Section eyebrow="THE OPPORTUNITY" title="A NEW ERA HAS BEGUN. HOLLYWOOD IS EMBRACING THE POWER OF VIDEO GAMES." tone="amber">
         <p>EARTH SCHOOL is designed as a long-term entertainment platform where meaningful gameplay, community and expanding content create ongoing opportunities for players and sustainable growth for the business.</p>
-        <div className="pillGrid">{opportunity.map((item) => <span key={item}>{item}</span>)}</div>
+        <div className="itemGrid opportunityGrid">{opportunity.map((item) => <span key={item}>{item}</span>)}</div>
       </Section>
 
       <Section eyebrow="DEVELOPMENT VISION" title="FROM VISION TO PLAYABLE EXPERIENCE">
