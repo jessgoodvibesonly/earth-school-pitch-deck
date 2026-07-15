@@ -134,11 +134,38 @@ export default function EarthSchoolPitchDeck() {
 
       <Section eyebrow="AI-DRIVEN NPCs" title="Residents with evolving memories, routines, personalities, relationships and conversations." tone="amber">
         <p>They recognize meaningful player choices, respond to changing circumstances and create relationships that feel personal rather than scripted.</p>
-        <div className="twoCol"><div><h3>THE SANCTUARY VEHICLE</h3><p>A private mobile headquarters where the avatar can review clues, journal discoveries, meditate, access the map, listen to Earth School Radio, explore neuroscience, archetypes and consciousness, and speak with interactive mentor-style AI guides.</p></div><div><h3>MENTOR CATEGORIES</h3><ul><li>A philosopher</li><li>A neuroscientist</li><li>A psychologist</li><li>A spiritual teacher</li><li>A future version of the player</li></ul></div></div>
-        <p className="statement">NOT SIMPLY TRANSPORTATION. TRANSFORMATION.</p>
+        <div className="sanctuaryFeature">
+          <div className="sanctuaryImageFrame">
+            <img src="/sanctuaryquote.png" alt="Interior concept art for the Sanctuary Vehicle, the player’s private mobile headquarters" />
+          </div>
+          <div className="sanctuaryCopy">
+            <p className="eyebrow">SIGNATURE GAMEPLAY HUB</p>
+            <h3>THE SANCTUARY VEHICLE</h3>
+            <p className="sanctuaryLead">The player’s private mobile headquarters—and one of EARTH SCHOOL’s defining gameplay systems.</p>
+            <p>After exploring Echo Point Island, players return here to connect clues, review discoveries, access the evolving map, journal their experiences and prepare for the next loop.</p>
+            <p>Inside, the player can:</p>
+            <ul className="functionList">
+              <li>Activate meditation and consciousness experiences</li>
+              <li>Access Earth School Radio</li>
+              <li>Explore neuroscience, archetypes and the laws of the universe</li>
+              <li>Speak privately with interactive AI mentors</li>
+              <li>Review choices, patterns, relationships and unlocked memories</li>
+              <li>Receive guidance from a future version of their own avatar</li>
+            </ul>
+            <div className="mentorPanel">
+              <h4>MENTOR CATEGORIES</h4>
+              <ul>
+                <li>A philosopher</li>
+                <li>A neuroscientist</li>
+                <li>A psychologist</li>
+                <li>A spiritual teacher</li>
+                <li>A future version of the player</li>
+              </ul>
+            </div>
+            <p className="sanctuaryStatement">NOT SIMPLY TRANSPORTATION.<br />THE PLAYER’S PRIVATE SPACE FOR TRANSFORMATION.</p>
+          </div>
+        </div>
       </Section>
-
-      <QuoteDivider src="/sanctuaryquote.png" alt="Sanctuary quote" />
 
       <Section eyebrow="THE RULES OF EARTH SCHOOL" title="Universal principles become discoverable rules of play.">
         <div className="ruleList">{rules.map((rule) => <strong key={rule}>{rule}</strong>)}</div>
