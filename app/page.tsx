@@ -137,13 +137,13 @@ export default function EarthSchoolPitchDeck() {
         <p className="statement">PERSPECTIVE IS GAMEPLAY.</p>
       </Section>
 
+      <QuoteDivider src="/sanctuaryquote.png" alt="Sanctuary quote" />
+
       <Section eyebrow="AI-DRIVEN NPCs" title="Residents with evolving memories, routines, personalities, relationships and conversations." tone="amber">
         <p>They recognize meaningful player choices, respond to changing circumstances and create relationships that feel personal rather than scripted.</p>
         <div className="twoCol"><div><h3>THE SANCTUARY VEHICLE</h3><p>A private mobile headquarters where the avatar can review clues, journal discoveries, meditate, access the map, listen to Earth School Radio, explore neuroscience, archetypes and consciousness, and speak with interactive mentor-style AI guides.</p></div><div><h3>MENTOR CATEGORIES</h3><ul><li>A philosopher</li><li>A neuroscientist</li><li>A psychologist</li><li>A spiritual teacher</li><li>A future version of the player</li></ul></div></div>
         <p className="statement">NOT SIMPLY TRANSPORTATION. TRANSFORMATION.</p>
       </Section>
-
-      <QuoteDivider src="/sanctuaryquote.png" alt="Sanctuary quote" />
 
       <Section eyebrow="THE RULES OF EARTH SCHOOL" title="Universal principles become discoverable rules of play.">
         <div className="ruleList">{rules.map((rule) => <strong key={rule}>{rule}</strong>)}</div>
